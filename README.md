@@ -1,5 +1,7 @@
 # FelixNoChat
 
+Erstellt mit ChatGPT.
+
 Minimaler clientseitiger Fabric-Mod für Minecraft Java 26.2. Er verhindert das
 Öffnen des Chatfensters (einschließlich `T` und `/`), blockiert ausgehende
 Chatnachrichten und blendet eingehende Chatzeilen aus. Der Mod besitzt
