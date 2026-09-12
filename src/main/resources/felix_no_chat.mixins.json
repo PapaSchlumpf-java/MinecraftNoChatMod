@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "de.felix.nochat.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "GuiMixin",
+    "ChatComponentMixin",
+    "ClientPacketListenerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

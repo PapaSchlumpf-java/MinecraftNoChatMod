@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "felix_no_chat",
+  "version": "${version}",
+  "name": "FelixNoChat",
+  "description": "Disables chat display and chat input on the Minecraft client.",
+  "environment": "client",
+  "mixins": [
+    "felix_no_chat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.2",
+    "java": ">=25"
+  }
+}
