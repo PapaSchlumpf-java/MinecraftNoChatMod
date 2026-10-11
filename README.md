@@ -4,8 +4,26 @@ Erstellt mit ChatGPT.
 
 Minimaler clientseitiger Fabric-Mod für Minecraft Java 26.2. Er verhindert das
 Öffnen des Chatfensters (einschließlich `T` und `/`), blockiert ausgehende
-Chatnachrichten und blendet eingehende Chatzeilen aus. Der Mod besitzt
-absichtlich keine Konfiguration und keine GUI.
+Chatnachrichten und Befehle und blendet eingehende Chatnachrichten vollständig
+aus. Auf ausdrücklich freigegebenen Servern bleibt der Chat verfügbar.
+
+## Konfiguration
+
+Beim ersten Start wird `config/felix-no-chat/config.yml` angelegt. Änderungen
+werden beim nächsten Start von Minecraft übernommen.
+
+```yaml
+chat:
+  default-enabled: false
+  allowed-servers:
+    - "schmoeller.net"
+    - "*.schmoeller.net"
+```
+
+`default-enabled: false` sperrt den Chat grundsätzlich. Ein exakter Eintrag
+gibt genau diesen Host frei; ein Eintrag mit `*.` gibt dessen Subdomains frei.
+Einzelspielerwelten bleiben gesperrt, solange `default-enabled` nicht auf
+`true` gesetzt wird.
 
 ## Bauen
 

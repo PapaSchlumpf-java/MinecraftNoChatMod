@@ -5,6 +5,7 @@
   "client": [
     "GuiMixin",
     "ChatComponentMixin",
+    "ChatListenerMixin",
     "ClientPacketListenerMixin"
   ],
   "injectors": {

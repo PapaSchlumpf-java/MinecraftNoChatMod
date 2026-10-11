@@ -1,0 +1,5 @@
+chat:
+  default-enabled: false
+  allowed-servers:
+    - "schmoeller.net"
+    - "*.schmoeller.net"

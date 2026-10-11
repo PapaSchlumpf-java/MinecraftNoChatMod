@@ -1,5 +1,6 @@
 package de.felix.nochat.mixin;
 
+import de.felix.nochat.config.ChatPolicy;
 import net.minecraft.client.gui.components.ChatComponent;
 import net.minecraft.client.multiplayer.chat.GuiMessageSource;
 import net.minecraft.client.multiplayer.chat.GuiMessageTag;
@@ -20,6 +21,8 @@ abstract class ChatComponentMixin {
 		GuiMessageTag tag,
 		CallbackInfo ci
 	) {
-		ci.cancel();
+		if (!ChatPolicy.isChatEnabled()) {
+			ci.cancel();
+		}
 	}
 }
