@@ -2,7 +2,7 @@
 
 Erstellt mit ChatGPT.
 
-Minimaler clientseitiger Fabric-Mod für Minecraft Java 26.2. Er verhindert das
+Minimaler clientseitiger Fabric-Mod für Minecraft Java 26.2 und 26.3. Er verhindert das
 Öffnen des Chatfensters (einschließlich `T` und `/`), blockiert ausgehende
 Chatnachrichten und Befehle und blendet eingehende Chatnachrichten vollständig
 aus. Auf ausdrücklich freigegebenen Servern bleibt der Chat verfügbar.
@@ -33,14 +33,14 @@ Voraussetzung ist eine Internetverbindung. Java 25 wird bei Bedarf automatisch
 - macOS/Linux: `./gradlew build`
 - Windows: `gradlew.bat build`
 
-Die nutzbare Datei liegt danach unter `build/libs/felix-no-chat-1.0.1.jar`.
+Die nutzbare Datei liegt danach unter `build/libs/felix-no-chat-1.0.2.jar`.
 
 ## Installieren
 
-1. Minecraft 26.2 einmal mit dem aktuellen Fabric Loader starten.
+1. Minecraft 26.2 oder 26.3 einmal mit dem aktuellen Fabric Loader starten.
 2. Minecraft beenden.
 3. Eine vorhandene ältere FelixNoChat-JAR aus `mods` entfernen und
-   `felix-no-chat-1.0.1.jar` hineinkopieren.
+   `felix-no-chat-1.0.2.jar` hineinkopieren.
 4. Das Fabric-Profil erneut starten.
 
 Die JAR ist plattformunabhängig und für macOS, Windows und Linux identisch.
